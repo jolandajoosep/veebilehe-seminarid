@@ -2,7 +2,7 @@
 <html lang="ee">
 <head>
 <style>
-h1, h2 {
+h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -26,12 +26,25 @@ img {
 body {
   background-color: #D8BFD8;
 }
+.left, .right {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.left {
+    left: 15px;
+}
+.right {
+    right: 10px;
+}
 </style>
     <meta charset="UTF-8">
     <title>5 Müstiliste omadustega metalli</title>
 </head>
 <body>
-    <div>
+    <div class= 'left'>
         <h1>5 imelikku metalli omaduste poolest</h1>
         <p>On olemas 5 imeliku metalli, mille omadused erinevad tavaliste metallide omadustest.</p>
         <p>Kõike tuntuim neist metallidest on elavhõbe, mis om naturaalsesvormis esineb vedala kujul.</p>
@@ -44,8 +57,8 @@ body {
         />
     </div>
 
-    <div>
-        <h2>On olemas veel 4 müstilist metalli: </h2>
+    <div class= 'right'>
+        <h1>On olemas veel 4 müstilist metalli: </h1>
         <ul>
             <li class="b">Roodium
                 <ul>
@@ -68,9 +81,8 @@ body {
                 </ul>
             </li>   
         </ul>
+        <p>Liigu edasi uuele lehele, klõpsates <a href="./uus_leht.html">siia</a>.</p>
     </div>
-
-    <p>Liigu edasi uuele lehele, klõpsates <a href="./uus_leht.html">siia</a>.</p>
 
 </body>
 </html>
